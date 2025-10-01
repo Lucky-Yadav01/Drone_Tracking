@@ -15,6 +15,7 @@ It shows a moving marker on a map, just like how Google Maps shows live movement
 
 ## 📂 Project Structure
 Drone tracking/
+
 │── drone_tracking.py # Main Streamlit app
 
 │── drone_path.csv # Mock GPS path (lat, lon)
@@ -26,16 +27,17 @@ Drone tracking/
 ---
 
 ## 🔧 Installation
-
 1. **Clone or copy the folder**  
    Place `drone_tracking.py` and `drone_path.csv` inside the same directory.
 
 2. **Create a virtual environment (optional but recommended):**
-   python -m venv venv
-   venv\Scripts\activate   # On Windows
-   source venv/bin/activate  # On Mac/Linux
+   (`python -m venv venv`)
+   
+   (`venv\Scripts\activate`)   # On Windows
 
-3. **Install dependencies:**
+   (`source venv/bin/activate`)  # On Mac/Linux
+
+4. **Install dependencies:**
    pip install streamlit folium streamlit-folium pandas
 ---
 ## ▶️ Running the App
@@ -46,7 +48,9 @@ Inside the project folder (Drone tracking):
 This will open the app in your browser at:
 
 👉 http://localhost:8501
+
 ---
+
 ## 📊 CSV File Format (drone_path.csv)
 The CSV contains latitude and longitude coordinates:
 
@@ -62,7 +66,9 @@ lat,lon
 
 Each row = one GPS position.
 The script animates movement along these points.
+
 ---
+
 ## 🌍 Switching to Live API
 Currently, coordinates are loaded from drone_path.csv.
 
@@ -74,22 +80,29 @@ Replace this line in drone_tracking.py:
 
 with:
 
-(`import requests
-response = requests.get("http://your-api-url/drone")
-latest_data = response.json()
-lat, lon = latest_data["lat"], latest_data["lon"]`)
+(`import requests`)
 
-Append new coordinates into the list (or DataFrame).
+(`response = requests.get("http://your-api-url/drone")`)
 
-The marker will automatically update position in real-time.
+(`latest_data = response.json()`)
+
+(`lat, lon = latest_data["lat"], latest_data["lon"]`)`)
+
+(`Append new coordinates into the list (or DataFrame).`)
+
+(`The marker will automatically update position in real-time.`)
+
 ---
+
 ## ✅ Next Steps
 Integrate with your drone’s GPS + Raspberry Pi API.
 
 Use WebSocket streaming instead of polling for smoother real-time tracking.
 
 Add UI features like speed control, pause/resume, and historical path playback.
+
 ---
+
 ## 🛠️ Tech Stack
 Python 3.9+
 
