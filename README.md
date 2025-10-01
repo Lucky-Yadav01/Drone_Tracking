@@ -54,15 +54,11 @@ This will open the app in your browser at:
 ## 📊 CSV File Format (drone_path.csv)
 The CSV contains latitude and longitude coordinates:
 
-lat,lon
-
-19.428,72.824
-
-19.429,72.825
-
-19.430,72.826
-
-19.431,72.827
+   `lat,lon`
+   `19.428,72.824`
+   `19.429,72.825`
+   `19.430,72.826`
+   `19.431,72.827`
 
 Each row = one GPS position.
 The script animates movement along these points.
