@@ -104,7 +104,7 @@ with:
 ---
 
 ## 🛠️ Tech Stack
--Python 3.9+
--Streamlit (web interface)
--Folium + Leaflet (map rendering & animation)
--Pandas (CSV handling)
+- Python 3.9+
+- Streamlit (web interface)
+- Folium + Leaflet (map rendering & animation)
+- Pandas (CSV handling)
