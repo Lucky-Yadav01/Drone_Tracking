@@ -76,7 +76,7 @@ To use real-time GPS data from an API:
 
 Replace this line in drone_tracking.py:
 
-(`df = pd.read_csv("drone_path.csv")`)
+`df = pd.read_csv("drone_path.csv")`
 
 with:
 
