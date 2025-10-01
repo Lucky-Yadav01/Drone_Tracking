@@ -55,9 +55,13 @@ This will open the app in your browser at:
 The CSV contains latitude and longitude coordinates:
 
    `lat,lon`
+   
    `19.428,72.824`
+   
    `19.429,72.825`
+   
    `19.430,72.826`
+   
    `19.431,72.827`
 
 Each row = one GPS position.
@@ -91,19 +95,16 @@ with:
 ---
 
 ## ✅ Next Steps
-Integrate with your drone’s GPS + Raspberry Pi API.
+1. Integrate with your drone’s GPS + Raspberry Pi API.
 
-Use WebSocket streaming instead of polling for smoother real-time tracking.
+2. Use WebSocket streaming instead of polling for smoother real-time tracking.
 
-Add UI features like speed control, pause/resume, and historical path playback.
+3. Add UI features like speed control, pause/resume, and historical path playback.
 
 ---
 
 ## 🛠️ Tech Stack
-Python 3.9+
-
-Streamlit (web interface)
-
-Folium + Leaflet (map rendering & animation)
-
-Pandas (CSV handling)
+-Python 3.9+
+-Streamlit (web interface)
+-Folium + Leaflet (map rendering & animation)
+-Pandas (CSV handling)
