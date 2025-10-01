@@ -16,8 +16,11 @@ It shows a moving marker on a map, just like how Google Maps shows live movement
 ## 📂 Project Structure
 Drone tracking/
 │── drone_tracking.py # Main Streamlit app
+
 │── drone_path.csv # Mock GPS path (lat, lon)
+
 │── README.md # Project documentation
+
 │── .streamlit/ # Streamlit config files
 
 ---
@@ -38,7 +41,7 @@ Drone tracking/
 ## ▶️ Running the App
 Inside the project folder (Drone tracking):
    
-   python -m streamlit run drone_tracking.py
+(`python -m streamlit run drone_tracking.py`)
 
 This will open the app in your browser at:
 
@@ -48,10 +51,15 @@ This will open the app in your browser at:
 The CSV contains latitude and longitude coordinates:
 
 lat,lon
+
 19.428,72.824
+
 19.429,72.825
+
 19.430,72.826
+
 19.431,72.827
+
 Each row = one GPS position.
 The script animates movement along these points.
 ---
@@ -62,14 +70,14 @@ To use real-time GPS data from an API:
 
 Replace this line in drone_tracking.py:
 
-df = pd.read_csv("drone_path.csv")
+(`df = pd.read_csv("drone_path.csv")`)
 
 with:
 
-import requests
+(`import requests
 response = requests.get("http://your-api-url/drone")
 latest_data = response.json()
-lat, lon = latest_data["lat"], latest_data["lon"]
+lat, lon = latest_data["lat"], latest_data["lon"]`)
 
 Append new coordinates into the list (or DataFrame).
 
