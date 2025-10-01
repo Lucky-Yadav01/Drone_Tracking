@@ -31,11 +31,11 @@ Drone tracking/
    Place `drone_tracking.py` and `drone_path.csv` inside the same directory.
 
 2. **Create a virtual environment (optional but recommended):**
-   (`python -m venv venv`)
+   `python -m venv venv`
    
-   (`venv\Scripts\activate`)   # On Windows
+   `venv\Scripts\activate`   # On Windows
 
-   (`source venv/bin/activate`)  # On Mac/Linux
+   `source venv/bin/activate`  # On Mac/Linux
 
 4. **Install dependencies:**
    pip install streamlit folium streamlit-folium pandas
@@ -43,7 +43,7 @@ Drone tracking/
 ## ▶️ Running the App
 Inside the project folder (Drone tracking):
    
-(`python -m streamlit run drone_tracking.py`)
+`python -m streamlit run drone_tracking.py`
 
 This will open the app in your browser at:
 
@@ -80,17 +80,17 @@ Replace this line in drone_tracking.py:
 
 with:
 
-(`import requests`)
+`import requests`
 
-(`response = requests.get("http://your-api-url/drone")`)
+`response = requests.get("http://your-api-url/drone")`
 
-(`latest_data = response.json()`)
+`latest_data = response.json()`
 
-(`lat, lon = latest_data["lat"], latest_data["lon"]`)`)
+`lat, lon = latest_data["lat"], latest_data["lon"]`
 
-(`Append new coordinates into the list (or DataFrame).`)
+`Append new coordinates into the list (or DataFrame).`
 
-(`The marker will automatically update position in real-time.`)
+`The marker will automatically update position in real-time.`
 
 ---
 
